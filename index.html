@@ -153,15 +153,13 @@
     <section>
       <div>
         <h2>Контактная информация</h2>
-        <p>
-          NЁRDS DESIGN STUDIO
-        </p>
+        <p>NЁRDS DESIGN STUDIO</p>
         <p>
           191186, Марсель,<br>
           ул. Лучистая, д. 19/8 <br><br>
           тел. +0 (123) 456-78-90
         </p>
-        <button type="button">Напишите нам</button>
+        <a href="#">Напишите нам</a>
       </div>
 
       <img src="img/map-marker.png" alt="Маркер расположения">
@@ -186,7 +184,21 @@
 
   <section>
     <h2>Напишите нам</h2>
-    <!-- <form action=""></form> -->
+    <form action="#" method="POST">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-login">Ваш e-mail:</label>
+        <input type="email" name="login" id="user-login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-message">Текст письма:</label>
+        <textarea name="message" cols="30" rows="5" id="user-message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
     <button type="button">Закрыть</button>
   </section>
 
